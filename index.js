@@ -78,3 +78,8 @@ $(document).ready(() => {
         $('p').fadeOut();
     }, 500);
 });
+
+
+// Play audio (for chrome, must have user interaction)
+var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
+audio.play();
