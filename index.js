@@ -69,3 +69,12 @@ $("button").on("click", function(){
 $("button").on("click", function(){
     $("h1").slideUp().slideDown().animate({opacity: 0.5});
 });
+
+
+// fadein/out indefinitely (blink)
+$(document).ready(() => {
+    setInterval(() => {
+        $('p').fadeIn();
+        $('p').fadeOut();
+    }, 500);
+});
