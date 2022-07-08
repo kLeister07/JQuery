@@ -81,5 +81,16 @@ $(document).ready(() => {
 
 
 // Play audio (for chrome, must have user interaction)
-var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
-audio.play();
+//Sound Function
+function playSound(name) {
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
+};
+
+
+//Blinking Start Message
+$(document).ready(function(){
+    setInterval(function(){
+    $("h1").fadeOut().fadeIn();
+}, 1300);
+});
